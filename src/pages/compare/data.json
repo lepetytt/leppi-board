@@ -1,0 +1,42 @@
+{
+  "$comment": "The compare example's data. `variants` are the columns; each row in `groups` says per variant: true — included, false — not, or a short text.",
+  "title": "Compare",
+  "description": "Three ways to build the first version",
+  "variants": [
+    { "id": "lite", "name": "Lite", "price": "$500", "time": "2 weeks", "text": "A landing page with a sign-up form. Payments and accounts come later, by hand." },
+    { "id": "standard", "name": "Standard", "price": "$1,000", "time": "3 weeks", "text": "A working product: accounts, payments through a hosted checkout, a simple admin." },
+    { "id": "full", "name": "Full", "price": "$2,000", "time": "6 weeks", "text": "Everything in Standard, plus progress tracking, emails and a Telegram bot." }
+  ],
+  "groups": [
+    {
+      "title": "Public pages",
+      "rows": [
+        { "label": "Home page and pricing", "values": { "lite": true, "standard": true, "full": true } },
+        { "label": "Blog", "values": { "lite": false, "standard": true, "full": true } },
+        { "label": "Languages", "values": { "lite": "1", "standard": "2", "full": "2" } }
+      ]
+    },
+    {
+      "title": "Accounts",
+      "rows": [
+        { "label": "Sign in with email", "values": { "lite": false, "standard": true, "full": true } },
+        { "label": "Progress and history", "values": { "lite": false, "standard": false, "full": true } }
+      ]
+    },
+    {
+      "title": "Payments",
+      "rows": [
+        { "label": "Checkout", "values": { "lite": "a payment link", "standard": "hosted checkout", "full": "hosted checkout" } },
+        { "label": "Receipts by email", "values": { "lite": false, "standard": true, "full": true } }
+      ]
+    },
+    {
+      "title": "Admin",
+      "rows": [
+        { "label": "Users and payments", "values": { "lite": false, "standard": true, "full": true } },
+        { "label": "Content editor", "values": { "lite": false, "standard": false, "full": true } },
+        { "label": "Telegram bot", "values": { "lite": false, "standard": false, "full": true } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "$comment": "The example board's data. Cards: a new one is an entry in `cards`, moving it is a change of `column`, the order in a column is the order in the list. Fields — README, \"Board example\".",
+  "question": "Notes, ideas and requests as the work goes",
+  "areas": ["Home", "General"],
+  "tags": [
+    { "name": "Client", "tone": "violet", "note": "waiting on the client: texts, photos, access, a decision, an answer" }
+  ],
+  "columns": [
+    { "id": "ideas", "title": "Ideas" },
+    { "id": "backlog", "title": "Backlog" },
+    { "id": "doing", "title": "In progress" },
+    { "id": "review", "title": "Review" },
+    { "id": "done", "title": "Done" },
+    { "id": "declined", "title": "Declined" }
+  ],
+  "sprints": [
+    { "id": "s1", "title": "Sprint 1", "dates": "from 05.11" }
+  ],
+  "cards": [
+    {
+      "id": "example-dark-mode",
+      "column": "ideas",
+      "title": "Example: a dark mode for the landing",
+      "text": "An idea, not a task yet: no priority until someone decides it's worth doing.",
+      "area": "Home",
+      "added": "2026-11-06"
+    },
+    {
+      "id": "example-client-texts",
+      "column": "backlog",
+      "title": "Example: texts for the home page — waiting on the client",
+      "text": "The **Client** tag means we need something from the client: texts, photos, access, a decision, an answer. The filter above the board works by tags. Such cards have no priority: the timing isn't ours.",
+      "area": "Home",
+      "tags": ["Client"],
+      "added": "2026-11-05"
+    },
+    {
+      "id": "example-first-screen",
+      "column": "doing",
+      "title": "Example: build the first screen",
+      "text": "The description is in the words of whoever asked: \"build the home page from the mockup, the header and the first screen first\".\n\nMarkup works in the text: **bold**, `code`, [a link](https://example.com). A line break is a new paragraph. Priority shows as bars: P1 — three red, P2 — two amber, P3 — one grey.",
+      "area": "Home",
+      "priority": "P1",
+      "added": "2026-11-05"
+    },
+    {
+      "id": "example-board",
+      "column": "review",
+      "title": "Example: set up the task board",
+      "text": "What a finished task looks like: in Review it has \"What's done\" and \"How to check\" filled in. It moves to Done only after the check — on the board owner's word.",
+      "area": "General",
+      "priority": "P3",
+      "added": "2026-11-05",
+      "done": "The board is a page of the shell, its data is `src/pages/board/board.json`. Not checked: the phone.",
+      "check": [
+        "Open the board — [locally](http://localhost:6010/#sprint-1): six columns.",
+        "Click this card: the details open, with \"What's done\" and \"How to check\" at the bottom.",
+        "Pick \"Client\" in the filter — one card is left, in Backlog."
+      ]
+    },
+    {
+      "id": "example-favicon",
+      "column": "done",
+      "title": "Example: a favicon",
+      "area": "General",
+      "priority": "P3",
+      "added": "2026-11-05",
+      "done": "`public/favicon.svg`."
+    },
+    {
+      "id": "example-carousel",
+      "column": "declined",
+      "title": "Example: a carousel on the home page",
+      "area": "Home",
+      "added": "2026-11-05",
+      "done": "Declined: one strong first screen says more than five slides."
+    }
+  ]
+}

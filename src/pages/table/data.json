@@ -1,0 +1,36 @@
+{
+  "$comment": "The table example's data. `columns` say what to show and how: `text`, `number`, `date` (YYYY-MM-DD) or `status` (a coloured label from `statuses`); `sub` puts a grey second line under a text cell. The filter above the table goes by `filterBy`.",
+  "title": "Table",
+  "description": "Feature requests from customers",
+  "filterBy": "status",
+  "sortBy": { "key": "votes", "dir": "desc" },
+  "columns": [
+    { "key": "title", "label": "Request", "type": "text", "sub": "note" },
+    { "key": "area", "label": "Area", "type": "text" },
+    { "key": "status", "label": "Status", "type": "status" },
+    { "key": "votes", "label": "Votes", "type": "number" },
+    { "key": "updated", "label": "Updated", "type": "date" }
+  ],
+  "statuses": [
+    { "name": "Planned", "tone": "blue" },
+    { "name": "In progress", "tone": "amber" },
+    { "name": "Shipped", "tone": "green" },
+    { "name": "Not now", "tone": "gray" }
+  ],
+  "rows": [
+    { "title": "Export to CSV", "note": "for the monthly report", "area": "Reports", "status": "Shipped", "votes": 64, "updated": "2026-11-12" },
+    { "title": "Dark theme", "note": "follow the system setting", "area": "App", "status": "Shipped", "votes": 58, "updated": "2026-10-30" },
+    { "title": "Team workspaces", "note": "shared projects and roles", "area": "Accounts", "status": "In progress", "votes": 51, "updated": "2026-11-18" },
+    { "title": "Calendar view", "note": "deadlines on a month grid", "area": "Projects", "status": "Planned", "votes": 47, "updated": "2026-11-15" },
+    { "title": "Slack notifications", "note": "a message when a task moves", "area": "Integrations", "status": "In progress", "votes": 39, "updated": "2026-11-19" },
+    { "title": "Offline mode", "note": "read and edit without a connection", "area": "App", "status": "Not now", "votes": 36, "updated": "2026-09-28" },
+    { "title": "Recurring tasks", "note": "every week, every month", "area": "Projects", "status": "Planned", "votes": 33, "updated": "2026-11-10" },
+    { "title": "Two-factor sign-in", "note": "an authenticator app", "area": "Accounts", "status": "Shipped", "votes": 29, "updated": "2026-10-21" },
+    { "title": "Custom fields", "note": "a number, a date, a list", "area": "Projects", "status": "Planned", "votes": 27, "updated": "2026-11-06" },
+    { "title": "Public share links", "note": "read-only, with an expiry", "area": "Projects", "status": "In progress", "votes": 22, "updated": "2026-11-17" },
+    { "title": "Weekly email digest", "note": "what changed in your projects", "area": "Reports", "status": "Planned", "votes": 18, "updated": "2026-11-02" },
+    { "title": "Zapier", "note": "triggers for new tasks", "area": "Integrations", "status": "Not now", "votes": 15, "updated": "2026-09-14" },
+    { "title": "Keyboard shortcuts", "note": "a list on the ? key", "area": "App", "status": "Shipped", "votes": 12, "updated": "2026-10-08" },
+    { "title": "Time tracking", "note": "a timer on each task", "area": "Projects", "status": "Not now", "votes": 9, "updated": "2026-08-30" }
+  ]
+}

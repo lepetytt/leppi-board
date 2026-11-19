@@ -1,0 +1,30 @@
+{
+  "$comment": "The dashboard example's data. Numbers in `stats` are text, shown as they are; `chart` and `list` values are numbers.",
+  "title": "Dashboard",
+  "description": "How the product did over the last 12 weeks",
+  "stats": [
+    { "label": "Visitors", "value": "48,210", "note": "last 12 weeks", "trend": "+18%" },
+    { "label": "Sign-ups", "value": "3,920", "note": "8.1% of visitors", "trend": "+9%" },
+    { "label": "Paying", "value": "412", "note": "10.5% of sign-ups", "trend": "+3%" },
+    { "label": "Churn", "value": "2.4%", "note": "monthly", "trend": "-0.6%", "goodWhenDown": true }
+  ],
+  "chart": {
+    "title": "Sign-ups by week",
+    "points": [
+      { "label": "W1", "value": 210 }, { "label": "W2", "value": 245 }, { "label": "W3", "value": 230 },
+      { "label": "W4", "value": 290 }, { "label": "W5", "value": 310 }, { "label": "W6", "value": 280 },
+      { "label": "W7", "value": 340 }, { "label": "W8", "value": 365 }, { "label": "W9", "value": 330 },
+      { "label": "W10", "value": 390 }, { "label": "W11", "value": 420 }, { "label": "W12", "value": 510 }
+    ]
+  },
+  "list": {
+    "title": "Where sign-ups come from",
+    "items": [
+      { "label": "Search", "note": "Google, Bing", "value": 1460 },
+      { "label": "Word of mouth", "note": "direct visits", "value": 1080 },
+      { "label": "Newsletter", "note": "weekly issue", "value": 610 },
+      { "label": "Social", "note": "X, LinkedIn, Threads", "value": 470 },
+      { "label": "Product Hunt", "note": "launch week", "value": 300 }
+    ]
+  }
+}
